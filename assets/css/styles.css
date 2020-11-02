@@ -1,0 +1,40 @@
+#features {
+  background: #333 url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=dbdf9954703354fc008f72081e98713a') no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#features .card {
+  background-color: transparent;
+  width: 220px;
+  height: 250px;
+  border: none;
+  position: relative;
+}
+
+.card-body, .card-body-back {
+  position: absolute;
+  height: 250px;
+  border-radius: 4px;
+  backface-visibility: hidden;
+  transition: transform .3s;
+}
+
+.card-body.flipped, .card-body-back.flipped {
+  transform: rotatey(180deg);
+}
+
+.card-body {
+  background-color: #fff;
+}
+
+.card-body-back {
+  background-color: #ff4716;
+}
+
+.card-body-back .btn.btn-default {
+  color: #FFF;
+  background: transparent;
+  border: 1px solid #FF8664;
+  width: 100%;
+}
